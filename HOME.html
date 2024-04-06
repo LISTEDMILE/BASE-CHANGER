@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HOME
+        </title>
+        <script text="text/javascript" language="javascript">
+
+            function conversion()
+            {
+                var a= document.getElementById("inpu").value;
+                var base=document.getElementById("base").value;
+                var basef=document.getElementById("basef").value;
+                var ans=0;
+                var d=0;
+                var e=0;
+                var k=0;
+                var l;
+                var inti;
+                var x=0;
+                var y="";
+                var frac;
+                var t=0;
+                var m=0;
+                var list=[];
+           
+                for(i=0;i<a.length;i++){
+                    if (a[i]=="."){
+                        break;
+                    } 
+                }
+
+                for(j=i-1;j>=0;j--)
+                {
+                    switch(a[j])
+                    {
+                        case "A": l="10";
+                        break;
+                        case "B": l="11";
+                        break;
+                        case "C": l="12";
+                        break;
+                        case "D": l="13";
+                        break;
+                        case "E": l="14";
+                        break;
+                        case "G": l="15";
+                        break;
+                        case "H": l="16";
+                        break;
+                        case "I": l="17";
+                        break;
+                        default: l=a[j];
+                        break;
+                    }
+
+                    if (Number(l)>=base)
+                    {
+                        document.write("THE NUMBER COULD NOT HAVE DIGIT GREATER THAN BASE");
+                        break;
+                    }
+                    ans=ans+Number(l)*Math.pow(base,d);
+                    d++;
+                }
+
+                for (k=i+1;k<a.length;k++)
+                {
+                    switch(a[k])
+                    {
+                        case "A": l="10";
+                        break;
+                        case "B": l="11";
+                        break;
+                        case "C": l="12";
+                        break;
+                        case "D": l="13";
+                        break;
+                        case "E": l="14";
+                        break;
+                        case "G": l="15";
+                        break;
+                        case "H": l="16";
+                        break;
+                        case "I": l="17";
+                        break;
+                        default: l=a[k];
+                        break;
+                    }
+
+                    if (Number(l)>=base)
+                    {
+                        document.write("THE NUMBER COULD NOT HAVE DIGIT GREATER THAN BASE");
+                        break;
+                    }
+                    e++;
+                    ans=ans+Number(l)/Math.pow(base,e);  
+                }
+
+                frac=ans%1;
+                inti=ans-frac;
+
+                for (i=inti;i>0;i=Math.floor(i/basef))
+                {
+                    x=i%basef;
+                    switch(x)
+                    {
+                        case 10: l="A";
+                        break;
+                        case 11: l="B";
+                        break;
+                        case 12: l="C";
+                        break;
+                        case 13: l="D";
+                        break;
+                        case 14: l="E";
+                        break;
+                        case 15: l="F";
+                        break;
+                        case 16: l="G";
+                        break;
+                        case 17: l="H";
+                        break;
+                        default: l=x.toString();
+                        break;
+                    }
+                    y=l+y;
+                }
+
+                if (frac!=0)
+                {
+                    y=y+".";
+                    t=frac;
+
+                    for(j=0;j<2;j++)
+                    {
+                        t=basef*t;
+                        m=Math.floor(t/1);
+                 
+                        switch(m)
+                        {
+                            case 10: l="A";
+                            break;
+                            case 11: l="B";
+                            break;
+                            case 12: l="C";
+                            break;
+                            case 13: l="D";
+                            break;
+                            case 14: l="E";
+                            break;
+                            case 15: l="F";
+                            break;
+                            case 16: l="G";
+                            break;
+                            case 17: l="H";
+                            break;
+                            default: l=m.toString();
+                            break;
+                        }
+                        y=y+l;
+                        r=list.indexOf(t); 
+                        if (r!=-1)
+                        {
+                            break;
+                        }
+                        list.push(t);    
+                    }
+                }
+                document.write(y);
+            }
+
+            function digit0(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"0";
+            }
+            function digit1(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"1";
+            }
+            function digit2(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"2";
+            }
+            function digit3(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"3";
+            }
+            function digit4(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"4";
+            }
+            function digit5(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"5";
+            }
+            function digit6(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"6";
+            }
+            function digit7(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"7";
+            }
+            function digit8(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"8";
+            }
+            function digit9(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"9";
+            }
+            function digitA(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"A";
+            }
+            function digitB(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"B";
+            }
+            function digitC(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"C";
+            }
+            function digitD(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"D";
+            }
+            function digitE(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"E";
+            }
+            function digitF(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"F";
+            }
+            function digitG(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"G";
+            }
+            function digitH(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"H";
+            }
+            function digitI(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"I";
+            }
+            function digitt(){
+                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML.slice(0,-1);
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1 style="color:rgb(255, 255, 255); font-family:cursive; background-color: rgb(55, 207, 157);">TYPE CONVERSION</h1>
+
+        <h1 id="change">cxvx</h1>
+
+        <laber for="first">
+            Enter your number here
+        </laber>
+
+        <input type="text" id="inpu" name="first">
+        <input type="number" id="base" name="base">
+        <input type="number" id="basef" name="basef">
+
+        <button onclick="conversion()">
+        ldjflsj</button>
+
+      
+
+
+        <button onclick="digit()">
+        1</button>
+
+        <button onclick="digit0()"> 0 </button>
+        <button onclick="digit1()"> 1 </button>
+        <button onclick="digit2()"> 2 </button>
+        <button onclick="digit3()"> 3 </button>
+        <button onclick="digit4()"> 4 </button>
+        <button onclick="digit5()"> 5 </button>
+        <button onclick="digit6()"> 6 </button>
+        <button onclick="digit7()"> 7 </button>
+        <button onclick="digit8()"> 8 </button>
+        <button onclick="digit9()"> 9 </button>
+        <button onclick="digitA()"> A </button>
+        <button onclick="digitB()"> B </button>
+        <button onclick="digitC()"> C </button>
+        <button onclick="digitD()"> D </button>
+        <button onclick="digitE()"> E </button>
+        <button onclick="digitF()"> F </button>
+        <button onclick="digitG()"> G </button>
+        <button onclick="digitH()"> H </button>
+        <button onclick="digitI()"> I </button>
+        <button onclick="digitt()"> t </button>
+        <button onclick="digit()"> 1 </button>
+        <button onclick="digit()"> 1 </button>
+        <button onclick="digit()"> 1 </button>
+        <button onclick="digit()"> 1 </button>
+
+
+    </body>
+</html>
