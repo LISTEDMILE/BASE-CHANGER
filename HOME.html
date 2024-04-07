@@ -8,6 +8,23 @@
         <link rel="stylesheet" href="style.css">
         <script text="text/javascript" language="javascript">
 
+
+            function light(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="white";
+
+            }
+            function palelight(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="#E8EFCF";
+
+            }
+            function dark(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="#31363F";
+
+            }
+            function superdark(){
+                document.getElementsByTagName('body')[0].style.backgroundColor="black";
+
+            }
             function conversion()
             {
                 var a= document.getElementById("inpu").value;
@@ -243,8 +260,8 @@
                     y=y+".";
                     t=frac;
 
-                    j=0;
-                    while(j==0)
+                    
+                    for(j=0;j<10;j++)
                     {
                         
                         t=basef*t;
@@ -343,20 +360,42 @@
                 <div id="logo">
 
                 </div>
-                <a href="#">
+                <a href="" style="text-decoration: underline;">
                     HOME
                 </a>
-                <a href="#">
-                    HOME
+                <a href="about.html">
+                    ABOUT
                 </a>
-                <a href="#">
-                    HOME
+                <div id="theme" style="display:inline-block; width:fit-content;">
+                <a href="#" >
+                    THEME
                 </a>
-                <a href="#">
-                    HOME
+                
+                <div id="show">
+                    <div class="ht" id="light">
+                    
+<button onclick="light()">LIGHT</button> <br>
+
+</div>
+<div class="ht">
+<button onclick="dark()">DARK</button> <br>
+
+</div>
+<div class="ht">
+<button onclick="palelight()">PALE LIGHT</button>
+
+</div>
+<div class="ht">
+<button onclick="superdark()">SUPER DARK</button>
+</div>
+                
+            </div>
+        </div>
+                <a href="HELP.html">
+                    HELP
                 </a>
-                <a href="#">
-                    HOME
+                <a href="contact us.html">
+                    CONTACT US
                 </a>
             </div>
         </div>
@@ -368,19 +407,24 @@
 
         <div id="body">
             <div>
-                <p style="font-size: 30px; display:inline;">ENTER THE NUMBER: &nbsp;&nbsp;&nbsp;&nbsp; </p><input placeholder="NUMBER:"type="text" id="inpu" name="first">
+                
+                <p style="font-size: 25px; display:inline;">ENTER THE NUMBER:</p>
+            
+                <input placeholder="NUMBER:"type="text" id="inpu" class="input">
             </div>
         </div>
 
         <div id="body">
             <div>
-                <p style="font-size: 30px; display:inline;">BASE: &nbsp;&nbsp;&nbsp;&nbsp; </p><input placeholder="INPUT BASE" type="number" id="base" name="base">  
+                <p style="font-size: 30px; display:inline;">BASE:</p><input placeholder="INPUT" type="number" id="base" class="input">  
             </div>
+            <div>
 
             <P id="p">TO</P>
+        </div>
 
             <div>
-                <p style="font-size: 30px; display:inline;">BASE: &nbsp;&nbsp; </p><input placeholder="OUTPUT BASE" type="number" id="basef" name="basef">  
+                <p style="font-size: 30px; display:inline;">BASE:</p><input placeholder="OUTPUT" type="number" id="basef" class="input">  
             </div>
         </div>
 <center>
@@ -397,6 +441,21 @@
         <button onclick="conversion()" id="convert">
         CONVERT</button>
     </center>
+
+
+
+
+    <footer>
+        <div style="background-color: rgb(58, 55, 55); padding:30px; margin-top:100px">
+            
+                <h1 style="color:cyan; font-size: 20px; font-family: 'Courier New', Courier, monospace;">
+                    <CENTER>
+                    We are here to help you out <BR>  Creator: <BR>  KUNAL SHARMA
+                    </CENTER>
+                </h1>
+
+        </div>
+    </footer>
 
       
 

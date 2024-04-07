@@ -1,9 +1,7 @@
 *{
     font-family:sans-serif,arial;
 }
-h1{
-    color:red;
-}
+
 a{
     text-decoration: none;
     color:white;
@@ -11,6 +9,54 @@ a{
 
     
 }
+
+
+#show{
+    display:none;
+}
+#theme{
+    z-index: 1;
+}
+#theme:hover #show{
+    display:inline-block;
+    position:absolute;
+    z-index: 2;
+    background-color: #13474d;
+    padding:2px;
+    height:fit-content;
+    width:fit-content;
+    
+}
+
+.ht{
+    background-color: #13474d;
+    color:white;
+    height:fit-content;
+    padding:2px;
+    border:2px;
+    
+    
+}
+.ht button{
+    background-color: #13474d;
+    color:white;
+    border:2px;
+}
+
+.ht:hover{
+    background-color: white;
+}
+
+
+.ht:hover button{
+    background-color: white;
+    color:#13474d
+  
+}
+
+
+
+
 
 #header{
     background-color:#77B0AA;
@@ -41,6 +87,7 @@ a{
     
     
 }
+
 input{
     margin:2px 1px 1px 3px;
     height:50px;
@@ -52,7 +99,7 @@ input{
     
     
 }
-button{
+#convert{
     color:white;
     background-color:#003C43;
     height:50px;
