@@ -11,6 +11,7 @@
             function conversion()
             {
                 var a= document.getElementById("inpu").value;
+                a=a.toUpperCase();
                 var base=document.getElementById("base").value;
                 var basef=document.getElementById("basef").value;
                 var ans=0;
@@ -24,6 +25,7 @@
                 var frac;
                 var t=0;
                 var m=0;
+                var n=0;
                 var list=[];
            
                 for(i=0;i<a.length;i++){
@@ -46,11 +48,47 @@
                         break;
                         case "E": l="14";
                         break;
-                        case "G": l="15";
+                        case "F": l="15";
                         break;
-                        case "H": l="16";
+                        case "G": l="16";
                         break;
-                        case "I": l="17";
+                        case "H": l="17";
+                        break;
+                        case "I": l="18";
+                        break;
+                        case "J": l="19";
+                        break;
+                        case "K": l="20";
+                        break;
+                        case "L": l="21";
+                        break;
+                        case "M": l="22";
+                        break;
+                        case "N": l="23";
+                        break;
+                        case "O": l="24";
+                        break;
+                        case "P": l="25";
+                        break;
+                        case "Q": l="26";
+                        break;
+                        case "R": l="27";
+                        break;
+                        case "S": l="28";
+                        break;
+                        case "T": l="29";
+                        break;
+                        case "U": l="30";
+                        break;
+                        case "V": l="31";
+                        break;
+                        case "W": l="32";
+                        break;
+                        case "X": l="33";
+                        break;
+                        case "Y": l="34";
+                        break;
+                        case "Z": l="35";
                         break;
                         default: l=a[j];
                         break;
@@ -58,7 +96,7 @@
 
                     if (Number(l)>=base)
                     {
-                        document.write("THE NUMBER COULD NOT HAVE DIGIT GREATER THAN BASE");
+                        n=1;
                         break;
                     }
                     ans=ans+Number(l)*Math.pow(base,d);
@@ -79,11 +117,47 @@
                         break;
                         case "E": l="14";
                         break;
-                        case "G": l="15";
+                        case "F": l="15";
                         break;
-                        case "H": l="16";
+                        case "G": l="16";
                         break;
-                        case "I": l="17";
+                        case "H": l="17";
+                        break;
+                        case "I": l="18";
+                        break;
+                        case "J": l="19";
+                        break;
+                        case "K": l="20";
+                        break;
+                        case "L": l="21";
+                        break;
+                        case "M": l="22";
+                        break;
+                        case "N": l="23";
+                        break;
+                        case "O": l="24";
+                        break;
+                        case "P": l="25";
+                        break;
+                        case "Q": l="26";
+                        break;
+                        case "R": l="27";
+                        break;
+                        case "S": l="28";
+                        break;
+                        case "T": l="29";
+                        break;
+                        case "U": l="30";
+                        break;
+                        case "V": l="31";
+                        break;
+                        case "W": l="32";
+                        break;
+                        case "X": l="33";
+                        break;
+                        case "Y": l="34";
+                        break;
+                        case "Z": l="35";
                         break;
                         default: l=a[k];
                         break;
@@ -91,7 +165,7 @@
 
                     if (Number(l)>=base)
                     {
-                        document.write("THE NUMBER COULD NOT HAVE DIGIT GREATER THAN BASE");
+                        n=1;
                         break;
                     }
                     e++;
@@ -122,6 +196,42 @@
                         break;
                         case 17: l="H";
                         break;
+                        case 18: l="I";
+                        break;
+                        case 19: l="J";
+                        break;
+                        case 20: l="K";
+                        break;
+                        case 21: l="L";
+                        break;
+                        case 22: l="M";
+                        break;
+                        case 23: l="N";
+                        break;
+                        case 24: l="O";
+                        break;
+                        case 25: l="P";
+                        break;
+                        case 26: l="Q";
+                        break;
+                        case 27: l="R";
+                        break;
+                        case 28: l="S";
+                        break;
+                        case 29: l="T";
+                        break;
+                        case 30: l="U";
+                        break;
+                        case 31: l="V";
+                        break;
+                        case 32: l="W";
+                        break;
+                        case 33: l="X";
+                        break;
+                        case 34: l="Y";
+                        break;
+                        case 35: l="Z";
+                        break;
                         default: l=x.toString();
                         break;
                     }
@@ -146,7 +256,7 @@
                             break;
                             case 12: l="C";
                             break;
-                            case 13: l="D";
+                             case 13: l="D";
                             break;
                             case 14: l="E";
                             break;
@@ -155,6 +265,42 @@
                             case 16: l="G";
                             break;
                             case 17: l="H";
+                            break;
+                            case 18: l="I";
+                            break;
+                            case 19: l="J";
+                            break;
+                            case 20: l="K";
+                            break;
+                            case 21: l="L";
+                            break;
+                            case 22: l="M";
+                            break;
+                            case 23: l="N";
+                            break;
+                            case 24: l="O";
+                            break;
+                            case 25: l="P";
+                            break;
+                            case 26: l="Q";
+                            break;
+                            case 27: l="R";
+                            break;
+                            case 28: l="S";
+                            break;
+                            case 29: l="T";
+                            break;
+                            case 30: l="U";
+                            break;
+                            case 31: l="V";
+                            break;
+                            case 32: l="W";
+                            break;
+                            case 33: l="X";
+                            break;
+                            case 34: l="Y";
+                            break;
+                            case 35: l="Z";
                             break;
                             default: l=m.toString();
                             break;
@@ -168,68 +314,18 @@
                         list.push(t);    
                     }
                 }
-                document.write(y);
-            }
+                document.getElementById("answerdiv").style.display = 'inline-block';
+                if(n!=1){
+                document.getElementById("answer").innerHTML=y;
+                
+                }
+                else{
+                    document.getElementById("answer").innerHTML="DIGIT CAN NOT BE GRATER THAN BASE";
+                    document.getElementById("answer").style.color = 'red';
 
-            function digit0(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"0";
-            }
-            function digit1(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"1";
-            }
-            function digit2(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"2";
-            }
-            function digit3(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"3";
-            }
-            function digit4(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"4";
-            }
-            function digit5(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"5";
-            }
-            function digit6(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"6";
-            }
-            function digit7(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"7";
-            }
-            function digit8(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"8";
-            }
-            function digit9(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"9";
-            }
-            function digitA(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"A";
-            }
-            function digitB(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"B";
-            }
-            function digitC(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"C";
-            }
-            function digitD(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"D";
-            }
-            function digitE(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"E";
-            }
-            function digitF(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"F";
-            }
-            function digitG(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"G";
-            }
-            function digitH(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"H";
-            }
-            function digitI(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML+"I";
-            }
-            function digitt(){
-                document.getElementById("change").innerHTML=document.getElementById("change").innerHTML.slice(0,-1);
+                }
+
+
             }
 
         </script>
@@ -269,55 +365,40 @@
 
         <div id="body">
             <div>
-                ENTER THE NUMBER:   <input type="text" id="inpu" name="first">
+                ENTER THE NUMBER:   <input placeholder="NUMBER:"type="text" id="inpu" name="first">
             </div>
         </div>
 
-        <h1>TYPE CONVERSION</h1>
+        <div id="body">
+            <div>
+                BASE:  <input placeholder="INPUT BASE" type="number" id="base" name="base">  
+            </div>
 
-        <h1 id="change">cxvxfffgffff</h1>
+            <P>TO</P>
 
-        <laber for="first">
-            Enter your number here
-        </laber>
+            <div>
+                BASE:  <input placeholder="OUTPUT BASE" type="number" id="basef" name="basef">  
+            </div>
+        </div>
+<center>
+    <div id="answerdiv">
+        <h1 id="answer"></h1>
+    </div>
+    </center>
 
-        
-        <input type="number" id="base" name="base">
-        <input type="number" id="basef" name="basef">
 
-        <button onclick="conversion()">
-        ldjflsj</button>
+       
+
+
+<center>
+        <button onclick="conversion()" id="convert">
+        CONVERT</button>
+    </center>
 
       
 
 
-        <button onclick="digit()">
-        1</button>
-
-        <button onclick="digit0()"> 0 </button>
-        <button onclick="digit1()"> 1 </button>
-        <button onclick="digit2()"> 2 </button>
-        <button onclick="digit3()"> 3 </button>
-        <button onclick="digit4()"> 4 </button>
-        <button onclick="digit5()"> 5 </button>
-        <button onclick="digit6()"> 6 </button>
-        <button onclick="digit7()"> 7 </button>
-        <button onclick="digit8()"> 8 </button>
-        <button onclick="digit9()"> 9 </button>
-        <button onclick="digitA()"> A </button>
-        <button onclick="digitB()"> B </button>
-        <button onclick="digitC()"> C </button>
-        <button onclick="digitD()"> D </button>
-        <button onclick="digitE()"> E </button>
-        <button onclick="digitF()"> F </button>
-        <button onclick="digitG()"> G </button>
-        <button onclick="digitH()"> H </button>
-        <button onclick="digitI()"> I </button>
-        <button onclick="digitt()"> t </button>
-        <button onclick="digit()"> 1 </button>
-        <button onclick="digit()"> 1 </button>
-        <button onclick="digit()"> 1 </button>
-        <button onclick="digit()"> 1 </button>
+       
 
 
     </body>
