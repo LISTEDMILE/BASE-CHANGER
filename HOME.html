@@ -243,10 +243,13 @@
                     y=y+".";
                     t=frac;
 
-                    for(j=0;j<2;j++)
+                    j=0;
+                    while(j==0)
                     {
+                        
                         t=basef*t;
                         m=Math.floor(t/1);
+                        t=t-m;
                  
                         switch(m)
                         {
@@ -365,19 +368,19 @@
 
         <div id="body">
             <div>
-                ENTER THE NUMBER:   <input placeholder="NUMBER:"type="text" id="inpu" name="first">
+                <p style="font-size: 30px; display:inline;">ENTER THE NUMBER: &nbsp;&nbsp;&nbsp;&nbsp; </p><input placeholder="NUMBER:"type="text" id="inpu" name="first">
             </div>
         </div>
 
         <div id="body">
             <div>
-                BASE:  <input placeholder="INPUT BASE" type="number" id="base" name="base">  
+                <p style="font-size: 30px; display:inline;">BASE: &nbsp;&nbsp;&nbsp;&nbsp; </p><input placeholder="INPUT BASE" type="number" id="base" name="base">  
             </div>
 
-            <P>TO</P>
+            <P id="p">TO</P>
 
             <div>
-                BASE:  <input placeholder="OUTPUT BASE" type="number" id="basef" name="basef">  
+                <p style="font-size: 30px; display:inline;">BASE: &nbsp;&nbsp; </p><input placeholder="OUTPUT BASE" type="number" id="basef" name="basef">  
             </div>
         </div>
 <center>
