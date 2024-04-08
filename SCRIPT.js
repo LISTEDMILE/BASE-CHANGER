@@ -1,5 +1,5 @@
 
-
+tt=2;
 
 function light(){
     document.getElementsByTagName('body')[0].style.backgroundColor="white";
@@ -17,6 +17,77 @@ function superdark(){
     document.getElementsByTagName('body')[0].style.backgroundColor="black";
 
 }
+
+
+
+function conv(){
+    document.getElementById("pchangeb").style.display="block";
+    document.getElementById("pchangec").style.display="none";
+    document.getElementById("pchangeco").style.display="none";
+
+    document.getElementById("conv").style.fontWeight="bolder";
+    document.getElementById("conv").style.textDecoration="underline";
+    document.getElementById("calc").style.fontWeight="normal";
+    document.getElementById("calc").style.textDecoration="none";
+    document.getElementById("comp").style.fontWeight="normal";
+    document.getElementById("comp").style.textDecoration="none";
+}
+
+
+function calc(){
+    document.getElementById("pchangeb").style.display="none";
+    document.getElementById("pchangec").style.display="block";
+    document.getElementById("pchangeco").style.display="none";
+
+    document.getElementById("conv").style.fontWeight="normal";
+    document.getElementById("conv").style.textDecoration="none";
+    document.getElementById("calc").style.fontWeight="bolder";
+    document.getElementById("calc").style.textDecoration="underline";
+    document.getElementById("comp").style.fontWeight="normal";
+    document.getElementById("comp").style.textDecoration="none";
+}
+
+function comp(){
+    document.getElementById("pchangeb").style.display="none";
+    document.getElementById("pchangec").style.display="none";
+    document.getElementById("pchangeco").style.display="block";
+
+    document.getElementById("conv").style.fontWeight="normal";
+    document.getElementById("conv").style.textDecoration="none";
+    document.getElementById("calc").style.fontWeight="normal";
+    document.getElementById("calc").style.textDecoration="none";
+    document.getElementById("comp").style.fontWeight="bolder";
+    document.getElementById("comp").style.textDecoration="underline";
+}
+
+function next(){
+    if(tt<3){
+        tt++;
+    }
+    if(tt==2){
+        calc();
+    }
+    else if(tt==3){
+        comp();
+    }
+}
+
+
+function prev(){
+    if(tt>1){
+        tt--;
+    }
+    if(tt==2){
+        calc();
+    }
+    else if(tt==1){
+        conv();
+    }
+}
+
+
+
+
 function conversion()
 {
     var a= document.getElementById("inpu").value;

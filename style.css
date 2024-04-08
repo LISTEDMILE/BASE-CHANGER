@@ -50,7 +50,7 @@ a{
 
 .ht:hover button{
     background-color: white;
-    color:#13474d
+    color:#13474d;
   
 }
 
@@ -69,6 +69,52 @@ a{
     margin-top:4px;
     
 }
+
+
+
+#pagechange{
+    
+    display:inline-block;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    height:50px;
+
+    width:65%;
+    margin-top:20px;
+    
+    
+}
+
+
+.pagecbutton{
+    color:#13474d;
+    text-decoration: none;
+    
+    background-color: transparent;
+    border:0px;
+    font-size: 15px;
+    height:fit-content;
+   
+}
+
+#pchangec{
+    display:none;
+}
+
+#pchangeco{
+    display:none;
+}
+
+#conv{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+
+
+
 #title{
     color:white;
     background-color:#003C43;
