@@ -1,20 +1,34 @@
 
-tt=2;
+tt=1;
 
 function light(){
     document.getElementsByTagName('body')[0].style.backgroundColor="white";
 
+    document.getElementById("conv").style.color = '#13474d';
+    document.getElementById("calc").style.color = '#13474d';
+    document.getElementById("comp").style.color = '#13474d';
 }
 function palelight(){
     document.getElementsByTagName('body')[0].style.backgroundColor="#E8EFCF";
-
+  
+    document.getElementById("conv").style.color = '#13474d';
+    document.getElementById("calc").style.color = '#13474d';
+    document.getElementById("comp").style.color = '#13474d';
 }
 function dark(){
     document.getElementsByTagName('body')[0].style.backgroundColor="#31363F";
 
+    document.getElementById("conv").style.color = '#98EECC';
+    document.getElementById("calc").style.color = '#98EECC';
+    document.getElementById("comp").style.color = '#98EECC';
+    
 }
 function superdark(){
     document.getElementsByTagName('body')[0].style.backgroundColor="black";
+
+    document.getElementById("conv").style.color = '#98EECC';
+    document.getElementById("calc").style.color = '#98EECC';
+    document.getElementById("comp").style.color = '#98EECC';
 
 }
 
@@ -109,17 +123,17 @@ function conversion()
     var te=0;
     var list=[];
 
-    if ((Number(base)%1==0) && (Number(basef)%1==0) && (Number(base)>0) && (Number(basef)>0)){
+    if ((base%1==0) && (basef%1==0) && (base>1) && (basef>1) && (base<37) && (basef<37)){
 
         
 
     
 
 
-    if(Number(a)<0){
-        a=Number(a);
-        a=-a;
-        a=a.toString();
+    if(a[0]=="-"){
+  
+  a=a.slice(1);
+  
         te=1;
     }
 
@@ -349,6 +363,692 @@ function conversion()
         {
             
             t=basef*t;
+            m=Math.floor(t/1);
+            t=t-m;
+     
+            switch(m)
+            {
+                case 10: l="A";
+                break;
+                case 11: l="B";
+                break;
+                case 12: l="C";
+                break;
+                case 13: l="D";
+                break;
+                case 14: l="E";
+                break;
+                case 15: l="F";
+                break;
+                case 16: l="G";
+                break;
+                case 17: l="H";
+                break;
+                case 18: l="I";
+                break;
+                case 19: l="J";
+                break;
+                case 20: l="K";
+                break;
+                case 21: l="L";
+                break;
+                case 22: l="M";
+                break;
+                case 23: l="N";
+                break;
+                case 24: l="O";
+                break;
+                case 25: l="P";
+                break;
+                case 26: l="Q";
+                break;
+                case 27: l="R";
+                break;
+                case 28: l="S";
+                break;
+                case 29: l="T";
+                break;
+                case 30: l="U";
+                break;
+                case 31: l="V";
+                break;
+                case 32: l="W";
+                break;
+                case 33: l="X";
+                break;
+                case 34: l="Y";
+                break;
+                case 35: l="Z";
+                break;
+                default: l=m.toString();
+                break;
+            }
+            y=y+l;
+            r=list.indexOf(t); 
+            if (r!=-1)
+            {
+                break;
+            }
+            list.push(t);    
+        }
+    }
+    document.getElementById("answerdiv").style.display = 'inline-block';
+    if(n!=1){
+    document.getElementById("answer").innerHTML=y;
+    document.getElementById("answer").style.color = '#13474d';
+    
+    }
+    else{
+        document.getElementById("answer").innerHTML="DIGIT CAN NOT BE GRATER THAN BASE";
+        document.getElementById("answer").style.color = 'red';
+
+    }
+
+
+}
+else{
+    document.getElementById("answerdiv").style.display = 'inline-block';
+    document.getElementById("answer").innerHTML="WRITE PROPER BASE";
+    document.getElementById("answer").style.color = 'red';
+}
+}
+
+
+
+
+
+
+var symbol=1;
+
+
+function add(){
+symbol=1;
+document.getElementById("fix").innerHTML="(+)";
+}
+
+function sub(){
+    symbol=2;
+    document.getElementById("fix").innerHTML="(-)";
+    }
+
+    function mul(){
+        symbol=3;
+        document.getElementById("fix").innerHTML="(*)";
+        }
+
+        function dev(){
+            symbol=4;
+            document.getElementById("fix").innerHTML="(/)";
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function calculation()
+{
+    var a= document.getElementById("inpu2").value;
+    a=a.toUpperCase();
+    var b= document.getElementById("inpu3").value;
+    b=b.toUpperCase();
+    var base2=document.getElementById("base2").value;
+    var base3=document.getElementById("base3").value;
+    var basef2=document.getElementById("basef2").value;
+   
+    var ans2=0;
+    var ans3=0;
+    var ans4=0;
+    var n=0;
+    var d=0;
+  
+    var e=0;
+    var k=0;
+    var l;
+    var inti;
+    var x=0;
+    var y="";
+    var frac;
+    var t=0;
+    var m=0;
+   
+    var te=0;
+    var list=[];
+    
+
+    if ((base2%1==0) && (base2>1) && (base2<37) && (base3%1==0) && (base3>1) && (base3<37) && (basef2%1==0) && (basef2>1) && (basef2<37)){
+
+    
+
+
+        if(a[0]=="-"){
+  
+            a=a.slice(1);
+            
+                  te=1;
+              }
+          
+
+    for(i=0;i<a.length;i++){
+        if (a[i]=="."){
+            break;
+        } 
+    }
+
+
+    
+
+    for(j=i-1;j>=0;j--)
+    {
+        switch(a[j])
+        {
+            case "A": l="10";
+            break;
+            case "B": l="11";
+            break;
+            case "C": l="12";
+            break;
+            case "D": l="13";
+            break;
+            case "E": l="14";
+            break;
+            case "F": l="15";
+            break;
+            case "G": l="16";
+            break;
+            case "H": l="17";
+            break;
+            case "I": l="18";
+            break;
+            case "J": l="19";
+            break;
+            case "K": l="20";
+            break;
+            case "L": l="21";
+            break;
+            case "M": l="22";
+            break;
+            case "N": l="23";
+            break;
+            case "O": l="24";
+            break;
+            case "P": l="25";
+            break;
+            case "Q": l="26";
+            break;
+            case "R": l="27";
+            break;
+            case "S": l="28";
+            break;
+            case "T": l="29";
+            break;
+            case "U": l="30";
+            break;
+            case "V": l="31";
+            break;
+            case "W": l="32";
+            break;
+            case "X": l="33";
+            break;
+            case "Y": l="34";
+            break;
+            case "Z": l="35";
+            break;
+            default: l=a[j];
+            break;
+        }
+
+        if (Number(l)>=base2)
+        {
+            n=1;
+            break;
+        }
+        ans2=ans2+Number(l)*Math.pow(base2,d);
+        d++;
+    }
+
+    for (k=i+1;k<a.length;k++)
+    {
+        switch(a[k])
+        {
+            case "A": l="10";
+            break;
+            case "B": l="11";
+            break;
+            case "C": l="12";
+            break;
+            case "D": l="13";
+            break;
+            case "E": l="14";
+            break;
+            case "F": l="15";
+            break;
+            case "G": l="16";
+            break;
+            case "H": l="17";
+            break;
+            case "I": l="18";
+            break;
+            case "J": l="19";
+            break;
+            case "K": l="20";
+            break;
+            case "L": l="21";
+            break;
+            case "M": l="22";
+            break;
+            case "N": l="23";
+            break;
+            case "O": l="24";
+            break;
+            case "P": l="25";
+            break;
+            case "Q": l="26";
+            break;
+            case "R": l="27";
+            break;
+            case "S": l="28";
+            break;
+            case "T": l="29";
+            break;
+            case "U": l="30";
+            break;
+            case "V": l="31";
+            break;
+            case "W": l="32";
+            break;
+            case "X": l="33";
+            break;
+            case "Y": l="34";
+            break;
+            case "Z": l="35";
+            break;
+            default: l=a[k];
+            break;
+        }
+
+        if (Number(l)>=base2)
+        {
+            n=1;
+            break;
+        }
+        e++;
+        ans2=ans2+Number(l)/Math.pow(base2,e);  
+    }
+
+    if (te==1){
+        ans2=-ans2
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   d=0;
+  
+    e=0;
+    k=0;
+  
+   
+    x=0;
+   y="";
+ 
+    t=0;
+    m=0;
+   
+    te=0;
+  
+
+
+    
+    if(b[0]=="-"){
+  
+        b=b.slice(1);
+        
+              te=1;
+          }
+      
+
+for(i=0;i<b.length;i++){
+    if (b[i]=="."){
+        break;
+    } 
+}
+
+
+
+
+for(j=i-1;j>=0;j--)
+{
+    switch(b[j])
+    {
+        case "A": l="10";
+        break;
+        case "B": l="11";
+        break;
+        case "C": l="12";
+        break;
+        case "D": l="13";
+        break;
+        case "E": l="14";
+        break;
+        case "F": l="15";
+        break;
+        case "G": l="16";
+        break;
+        case "H": l="17";
+        break;
+        case "I": l="18";
+        break;
+        case "J": l="19";
+        break;
+        case "K": l="20";
+        break;
+        case "L": l="21";
+        break;
+        case "M": l="22";
+        break;
+        case "N": l="23";
+        break;
+        case "O": l="24";
+        break;
+        case "P": l="25";
+        break;
+        case "Q": l="26";
+        break;
+        case "R": l="27";
+        break;
+        case "S": l="28";
+        break;
+        case "T": l="29";
+        break;
+        case "U": l="30";
+        break;
+        case "V": l="31";
+        break;
+        case "W": l="32";
+        break;
+        case "X": l="33";
+        break;
+        case "Y": l="34";
+        break;
+        case "Z": l="35";
+        break;
+        default: l=b[j];
+        break;
+    }
+
+    if (Number(l)>=base3)
+    {
+        n=1;
+        break;
+    }
+    ans3=ans3+Number(l)*Math.pow(base3,d);
+    d++;
+}
+
+for (k=i+1;k<b.length;k++)
+{
+    switch(b[k])
+    {
+        case "A": l="10";
+        break;
+        case "B": l="11";
+        break;
+        case "C": l="12";
+        break;
+        case "D": l="13";
+        break;
+        case "E": l="14";
+        break;
+        case "F": l="15";
+        break;
+        case "G": l="16";
+        break;
+        case "H": l="17";
+        break;
+        case "I": l="18";
+        break;
+        case "J": l="19";
+        break;
+        case "K": l="20";
+        break;
+        case "L": l="21";
+        break;
+        case "M": l="22";
+        break;
+        case "N": l="23";
+        break;
+        case "O": l="24";
+        break;
+        case "P": l="25";
+        break;
+        case "Q": l="26";
+        break;
+        case "R": l="27";
+        break;
+        case "S": l="28";
+        break;
+        case "T": l="29";
+        break;
+        case "U": l="30";
+        break;
+        case "V": l="31";
+        break;
+        case "W": l="32";
+        break;
+        case "X": l="33";
+        break;
+        case "Y": l="34";
+        break;
+        case "Z": l="35";
+        break;
+        default: l=b[k];
+        break;
+    }
+
+    if (Number(l)>=base3)
+    {
+        n=1;
+        break;
+    }
+    e++;
+    ans3=ans3+Number(l)/Math.pow(base3,e);  
+}
+if(n==1){
+    ans3=-ans3;
+}
+if(symbol==1){
+ans4=ans2+ans3;
+}
+else if(symbol==2){
+    ans4=ans2-ans3;
+    }
+else if(symbol==3){
+        ans4=ans2*ans3;
+        }
+else if(symbol==4){
+            ans4=ans2/ans3;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+te=0;
+if(ans4<0){
+    te=1;
+}
+
+    frac=ans4%1;
+    inti=ans4-frac;
+
+    for (i=inti;i>0;i=Math.floor(i/basef2))
+    {
+        x=i%basef2;
+        switch(x)
+        {
+            case 10: l="A";
+            break;
+            case 11: l="B";
+            break;
+            case 12: l="C";
+            break;
+            case 13: l="D";
+            break;
+            case 14: l="E";
+            break;
+            case 15: l="F";
+            break;
+            case 16: l="G";
+            break;
+            case 17: l="H";
+            break;
+            case 18: l="I";
+            break;
+            case 19: l="J";
+            break;
+            case 20: l="K";
+            break;
+            case 21: l="L";
+            break;
+            case 22: l="M";
+            break;
+            case 23: l="N";
+            break;
+            case 24: l="O";
+            break;
+            case 25: l="P";
+            break;
+            case 26: l="Q";
+            break;
+            case 27: l="R";
+            break;
+            case 28: l="S";
+            break;
+            case 29: l="T";
+            break;
+            case 30: l="U";
+            break;
+            case 31: l="V";
+            break;
+            case 32: l="W";
+            break;
+            case 33: l="X";
+            break;
+            case 34: l="Y";
+            break;
+            case 35: l="Z";
+            break;
+            default: l=x.toString();
+            break;
+        }
+        y=l+y;
+    }
+    if (te==1){
+        y="-"+y;
+    }
+
+    if (frac!=0)
+    {
+        y=y+".";
+        t=frac;
+
+        
+        for(j=0;j<10;j++)
+        {
+            
+            t=basef2*t;
             m=Math.floor(t/1);
             t=t-m;
      

@@ -66,13 +66,17 @@
 
         <center>
         <div id="pagechange">
+            <div style="margin-right:5%; margin-left:5%">
 
-            <div style="height:30px; width:30px; background-color: red;" id="buright" onclick="prev()">rdtdt</div>
+            <button onclick="prev()" id="buleft"></button>
+            </div>
             <button class="pagecbutton" id="conv" onclick="conv()">CONVERSION</button>
             <button class="pagecbutton" id="calc" onclick="calc()">CALCULATOR</button>
             <button class="pagecbutton" id="comp" onclick="comp()">COMPLEMENT</button>
-            <div style="height:30px; width:30px; background-color: red;" onclick="next()">rdtdt</div>
+         <div style="margin-left:5%; margin-right:5%">
+            <button id="buright" onclick="next()"></button>
         
+        </div>
         </div>
     </center>
 
@@ -122,10 +126,109 @@
 
 
 </div>
+
+
+
 <div id="pchangec">
-    <button>
-        ldskjf
-    </button>
+
+
+
+
+        <div id="body">
+            <div>
+                
+                <p style="font-size: 15px; display:inline;">ENTER FIRST NUMBER:</p>
+            
+                <input placeholder="NUMBER:"type="text" id="inpu2" class="input">
+            </div>
+
+            <div>
+                <p style="font-size: 15px; display:inline;">BASE:</p><input placeholder="INPUT" type="number" id="base2" class="input">  
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="body">
+            <div>
+                
+                <p style="font-size: 15px; display:inline;">ENTER SECOND NUMBER:</p>
+            
+                <input placeholder="NUMBER:"type="text" id="inpu3" class="input">
+            </div>
+
+            <div>
+                <p style="font-size:15px; display:inline;">BASE:</p><input placeholder="INPUT" type="number" id="base3" class="input">  
+            </div>
+
+        </div>
+
+        <div id="body">
+            
+           
+        
+
+            
+
+                <div id="theme" style=" border: 3px solid black; background-color: rgb(255, 255, 255) ;padding:3px; margin :3px; border-radius:15px; color: rgb(0, 0, 0); display:inline-block; font-size:20px; width:fit-content;">OPERATION
+<center><div  style=" border-radius: 15px; background-color: rgb(58, 114, 82); width:40%; height:fit-content; padding:2px;">
+                    <p id="fix" style ="display:inline-block; margin:4px;">(+)</p>
+                </div>
+            </center>
+            
+                    <div id="show">
+ 
+                        <div class="ht">
+                        
+    <button onclick="add()">(+)</button> <br>
+    
+    </div>
+    <div class="ht">
+    <button onclick="sub()">(-)</button> <br>
+    
+    </div>
+    <div class="ht">
+    <button onclick="mul()">(*)</button>
+    
+    </div>
+    <div class="ht">
+    <button onclick="dev()">(/)</button>
+    </div>
+                    
+                </div>
+            </div>
+
+            <div>
+                <p style="font-size: 20px; display:inline;">BASE:</p><input placeholder="OUTPUT" type="number" id="basef2" class="input">  
+            </div>
+            </div>
+      
+<center>
+    <div id="answerdiv">
+        <h1 id="answer"></h1>
+    </div>
+    </center>
+
+
+       
+
+
+<center>
+        <button onclick="calculation()" id="convert">
+        RESULT</button>
+    </center>
+
 </div>
 
 <div id="pchangeco">

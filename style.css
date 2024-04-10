@@ -69,6 +69,28 @@ a{
     margin-top:4px;
     
 }
+#buright{
+    display:inline-block;
+    background-size:cover;
+    background-image: url("right.png");
+    height:30px;
+    width:30px;
+    border:none;
+    background-color: transparent;
+    
+}
+
+
+#buleft{
+    display:inline-block;
+    background-size:cover;
+    background-image: url("left.png");
+    height:30px;
+    width:30px;
+    border:none;
+    background-color: transparent;
+}
+
 
 
 
@@ -78,13 +100,14 @@ a{
     display:flex;
     justify-content: space-around;
     align-items:center;
-    height:50px;
+    height:fit-content;
 
-    width:65%;
+    width:100%;
     margin-top:20px;
     
     
 }
+
 
 
 .pagecbutton{
@@ -93,8 +116,9 @@ a{
     
     background-color: transparent;
     border:0px;
-    font-size: 15px;
+  
     height:fit-content;
+    width:30%;
    
 }
 
@@ -145,6 +169,12 @@ input{
     
     
 }
+
+
+
+    
+    
+
 #convert{
     color:white;
     background-color:#003C43;
