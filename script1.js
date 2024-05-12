@@ -1,4 +1,15 @@
-tt=1;
+var tt=1;
+var rsq=1;
+function rs(){
+    document.getElementById("R1s").style.border = '1px solid black';
+    document.getElementById("Rs").style.border = '3px solid black';
+    rsq=1;
+}
+function r1s(){
+    document.getElementById("R1s").style.border = '3px solid black';
+    document.getElementById("Rs").style.border = '1px solid black';
+    rsq=2;
+}
 function light(){
 	document.getElementsByTagName('body')[0].style.backgroundColor="white";
 	document.getElementById("conv").style.color = '#13474d';
@@ -471,6 +482,62 @@ function calculation()
 //COMPLEMENT...______________________________________________________________________________________________
 
 function complement(){
+    var a=document.getElementById("inpu4").value;
+    a.toUpperCase();
+    var base4=document.getElementById("base4").value;
+    var c,d,te=0,l,list=[],ans="",to=0,g=2,y;
+    if ((base4%1==0) && (base4>1) && (base4<37)){
+        if(Number(a)!=0){
+    if (a[0]=="-"){
+        te=1;
+        a=a.slice(1);
+    }
+    for (c=a.lenght-1;c>=0;c--){
+        l=lettono(a[c],l);
+        if (l=="."){
+            ans="."+ans;
+        }
+        else{
+            if(base4>Number(l)){
+                y=(base4-1)-Number(l);
+                if (g==2 && rsq==1 && y<(base4-1)){
+                    y=y+1;
+                    g=1;
+                }
+                y=notolet(y,d);
+                ans=y+ans;
+            }
+            else{
+                break;
+                to=1;
+            }
+        }
+
+    }}
+    else{
+        ans="max";
+    }
+    if (te==1){
+        ans="-"+ans;
+    }
+    document.getElementById("answerdiv3").style.display = 'inline-block';
+		if(to!=1){
+			if(ans==""){
+				ans="max1";
+			}
+			document.getElementById("answer3").innerHTML=ans;
+			document.getElementById("answer3").style.color = '#13474d';
+		}
+		else{
+			document.getElementById("answer3").innerHTML="DIGIT CAN NOT BE GRATER THAN BASE";
+			document.getElementById("answer3").style.color = 'red';
+		}
+	}
+	else{
+		document.getElementById("answerdiv3").style.display = 'inline-block';
+	    document.getElementById("answer3").innerHTML="WRITE PROPER BASE";
+	    document.getElementById("answer3").style.color = 'red';
+	}
     
 
 

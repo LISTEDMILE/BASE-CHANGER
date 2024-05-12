@@ -221,3 +221,19 @@ input{
 #p{
     font-size: 30px;
 }
+
+
+#answer3{
+    color:#13474d;
+    font-size:50px;
+}
+#answerdiv3{
+    display:none;
+    border:6px solid #0ddcf3;
+    border-radius:10px;
+    height:fit-content;
+    width:fit-content;
+    padding:3px 30px 3px 30px ;
+    margin-bottom:40px;
+
+}
