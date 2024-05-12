@@ -6,7 +6,7 @@
         </title>
 
         <link rel="stylesheet" href="style.css">
-        <script text="text/javascript" language="javascript"  src="SCRIPT.js">
+        <script text="text/javascript" language="javascript"  src="script1.js">
 
         </script>
     </head>
@@ -234,9 +234,25 @@
 </div>
 
 <div id="pchangeco">
-    <button>
-        ldskjf
-    </button>
+    <div id="body">
+        <div>
+            <p style="font-size: 25px; display:inline;">ENTER THE NUMBER:</p>
+            <input placeholder="NUMBER:"type="text" id="inpu4" class="input">
+        </div>
+    </div>
+    <div id="body">
+        <div>
+            <p style="font-size: 30px; display:inline; padding:4px;">BASE:</p>
+            <input placeholder="INPUT" type="number" id="base4" class="input">  
+        </div>
+        <div style=" display:flex; justify-content: space-around; height:50px; width:50%; min-width: 200px; max-width: 400px;">
+            <button id="Rs" onclick="rs()" style="border:3px solid black; border-radius:1px; height:100%; width:45%; font-size: 15px; margin:2px;">
+                R's
+            </button>
+            <button id="R1s" onclick="r1s()" style="border:3px solid black; border-radius:1px; height:100%; width:45%; font-size: 15px; margin:2px;">
+                (R-1)'s
+            </button>
+        </div>
 </div>
 
     <footer>
