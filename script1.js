@@ -485,42 +485,43 @@ function complement(){
     var a=document.getElementById("inpu4").value;
     a.toUpperCase();
     var base4=document.getElementById("base4").value;
-    var c,d,te=0,l,list=[],ans="",to=0,g=2,y;
+    var c,d,te=0,l,ans="",to=0,g=2,y;
     if ((base4%1==0) && (base4>1) && (base4<37)){
         if(Number(a)!=0){
-    if (a[0]=="-"){
-        te=1;
-        a=a.slice(1);
-    }
-    for (c=a.lenght-1;c>=0;c--){
-        l=lettono(a[c],l);
-        if (l=="."){
-            ans="."+ans;
-        }
-        else{
-            if(base4>Number(l)){
-                y=(base4-1)-Number(l);
-                if (g==2 && rsq==1 && y<(base4-1)){
-                    y=y+1;
-                    g=1;
+            if (a[0]=="-"){
+                te=1;
+                a=a.slice(1);
+            }
+            for (c=(a.lenght)-1;c>=0;c--){
+                l=lettono(a[c],l);
+                if (l=="."){
+                    ans="."+ans;
                 }
-                y=notolet(y,d);
-                ans=y+ans;
-            }
-            else{
-                break;
-                to=1;
+                else{
+                    if(base4>Number(l)){
+                        y=(base4-1)-Number(l);
+                        if (g==2 && rsq==1 && y<(base4-1)){
+                            y=y+1;
+                            g=1;
+                        }
+                        y=notolet(y,d);
+                        ans=y+ans;
+                    }
+                    else{
+                        break;
+                        to=1;
+                    }
+                }
             }
         }
-
-    }}
-    else{
-        ans="max";
-    }
-    if (te==1){
-        ans="-"+ans;
-    }
-    document.getElementById("answerdiv3").style.display = 'inline-block';
+    
+        else{
+            ans="max";
+        }
+        if (te==1){
+            ans="-"+ans;
+        }
+        document.getElementById("answerdiv3").style.display = 'inline-block';
 		if(to!=1){
 			if(ans==""){
 				ans="max1";
