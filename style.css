@@ -4,16 +4,13 @@
 
 a{
     text-decoration: none;
-    color:white;
-   
-
-    
+    color:white;    
 }
-
 
 #show{
     display:none;
 }
+
 #theme{
     z-index: 1;
 }
@@ -24,8 +21,7 @@ a{
     background-color: #13474d;
     padding:2px;
     height:fit-content;
-    width:fit-content;
-    
+    width:fit-content;    
 }
 
 .ht{
@@ -34,29 +30,19 @@ a{
     height:fit-content;
     padding:2px;
     border:2px;
-    
-    
 }
 .ht button{
     background-color: #13474d;
     color:white;
     border:2px;
 }
-
 .ht:hover{
     background-color: white;
 }
-
-
 .ht:hover button{
     background-color: white;
-    color:#13474d;
-  
+    color:#13474d; 
 }
-
-
-
-
 
 #header{
     background-color:#77B0AA;
@@ -66,54 +52,19 @@ a{
     justify-content: space-around;
     align-items:center;
     font-size:15px;
-    margin-top:4px;
-    
-}
-
-
-
-#pagechange{
-    
-    display:inline-block;
-    display:flex;
-    justify-content: space-around;
-    align-items:center;
-
-
-    width:100%;
-    margin-top:20px;
-
-    
-    height:fit-content;
-}
-
-
-
-.pagecbutton{
-    color:#13474d;
-    text-decoration: none;
-    
-    background-color: transparent;
-    border:0px;
-  
-    width:25%;
-    height:fit-content;
-    
-   
+    margin-top:4px;    
 }
 
 #buright{
     display:inline-block;
     background-size:cover;
-    background-image: url("right.png");
+    background-image: url("left.png");
     height:30px;
     width:30px;
     border:none;
-    background-color: transparent;
-    
+    background-color: transparent;    
+    transform: rotate(180deg);
 }
-
-
 #buleft{
     display:inline-block;
     background-size:cover;
@@ -124,24 +75,36 @@ a{
     background-color: transparent;
 }
 
-
-
+#pagechange{    
+    display:inline-block;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    height:fit-content;
+    width:95%;
+    margin-top:20px;
+}
+.pagecbutton{
+    color:#98EECC;
+    text-decoration: none;
+    
+    background-color: transparent;
+    border:0px;
+  
+    height:fit-content;
+  font-size:55%;
+    width:30%;   
+}
 #pchangec{
     display:none;
 }
-
 #pchangeco{
     display:none;
 }
-
 #conv{
     font-weight: bolder;
     text-decoration: underline;
 }
-
-
-
-
 
 #title{
     color:white;
@@ -150,6 +113,7 @@ a{
     padding:15px 3px 3px 3px;
     font-size:55px;
 }
+
 #body{
     margin:40px;
     text-align:center;
@@ -157,9 +121,7 @@ a{
     padding:10px;
     border-radius:14px;
     display:flex;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around;    
 }
 
 input{
@@ -170,14 +132,7 @@ input{
     border-radius:15px;
     text-align: center;
     font-size:2em;
-    
-    
 }
-
-
-
-    
-    
 
 #convert{
     color:white;
@@ -186,9 +141,8 @@ input{
     width:200px;
     border:2px solid #77B0AA;
     border-radius:10px;
-
-
 }
+
 #answer{
     color:#13474d;
     font-size:50px;
@@ -201,9 +155,7 @@ input{
     width:fit-content;
     padding:3px 30px 3px 30px ;
     margin-bottom:40px;
-
 }
-
 #answer2{
     color:#13474d;
     font-size:50px;
@@ -216,12 +168,11 @@ input{
     width:fit-content;
     padding:3px 30px 3px 30px ;
     margin-bottom:40px;
-
 }
+
 #p{
     font-size: 30px;
 }
-
 
 #answer3{
     color:#13474d;
@@ -235,5 +186,4 @@ input{
     width:fit-content;
     padding:3px 30px 3px 30px ;
     margin-bottom:40px;
-
 }

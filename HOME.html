@@ -4,290 +4,238 @@
         <title>
             HOME
         </title>
-
         <link rel="stylesheet" href="style.css">
-        <script text="text/javascript" language="javascript"  src="script1.js">
-
+        <script text="text/javascript" language="javascript"  src="SCRIPT.js">
         </script>
     </head>
-    <body>
-
+    <body bgcolor="black">
         <header>
             <div id="title">
                 TYPE CONVERSION
-           
-            <div id="header">
-                <div id="logo">
-
-                </div>
-                <a href="" style="text-decoration: underline;">
-                    HOME
-                </a>
-                <a href="about.html">
-                    ABOUT
-                </a>
-                <div id="theme" style="display:inline-block; width:fit-content;">
-                <a href="#" >
-                    THEME
-                </a>
-                
-                <div id="show">
-                    <div class="ht" id="light">
-                    
-<button onclick="light()">LIGHT</button> <br>
-
-</div>
-<div class="ht">
-<button onclick="dark()">DARK</button> <br>
-
-</div>
-<div class="ht">
-<button onclick="palelight()">PALE LIGHT</button>
-
-</div>
-<div class="ht">
-<button onclick="superdark()">SUPER DARK</button>
-</div>
-                
+                <div id="header">
+                   <a href="" style="text-decoration: underline;">
+                      HOME
+                   </a>
+                   <a href="about.html">
+                      ABOUT
+                   </a>
+                   <div id="theme" style="display:inline-block; width:fit-content;">
+                       <a href="#" >
+                           THEME
+                       </a>
+                       <div id="show">
+                           <div class="ht" id="light">
+                               <button onclick="light()">
+                                 LIGHT
+                               </button>
+                           </div>
+                           <div class="ht">
+                               <button onclick="dark()">
+                                 DARK
+                               </button>
+                           </div>
+                           <div class="ht">
+                               <button onclick="palelight()">
+                                 PALE LIGHT
+                               </button>
+                           </div>
+                           <div class="ht">
+                               <button onclick="superdark()">
+                                 SUPER DARK
+                               </button>
+                           </div>
+                       </div>
+                   </div>
+                   <a href="HELP.html">
+                       HELP
+                   </a>
+               </div>
             </div>
-        </div>
-                <a href="HELP.html">
-                    HELP
-                </a>
-                <a href="contact us.html">
-                    CONTACT US
-                </a>
-            </div>
-        </div>
-
-
-
         </header>
-<div style="width:100%">
+        <div style="width:100%">
         <center>
-        <div id="pagechange">
-            <div style="margin-right:5%; margin-left:5%">
-
-            <button onclick="prev()" id="buleft"></button>
+            <div id="pagechange">
+                <div style="margin-right:5%; margin-left:5%">
+                    <button onclick="prev()" id="buleft">
+                    </button>
+                </div>
+                <button class="pagecbutton" id="conv" onclick="conv()">CONVERSION</button>
+                <button class="pagecbutton" id="calc" onclick="calc()">CALCULATOR</button>
+                <button class="pagecbutton" id="comp" onclick="comp()">COMPLEMENT</button>
+                <div style="margin-left:5%; margin-right:5%">
+                    <button id="buright" onclick="next()">
+                    </button>
+                </div>
             </div>
-            <button class="pagecbutton" id="conv" onclick="conv()">CONVERSION</button>
-            <button class="pagecbutton" id="calc" onclick="calc()">CALCULATOR</button>
-            <button class="pagecbutton" id="comp" onclick="comp()">COMPLEMENT</button>
-         <div style="margin-left:5%; margin-right:5%">
-            <button id="buright" onclick="next()"></button>
-        
+        </center>
         </div>
-        </div>
-    </center>
-</div>
-    <hr>
-
-
-
-
-
+        <hr>
         <div id="pchangeb">
-
-
         <div id="body">
             <div>
-                
-                <p style="font-size: 25px; display:inline;">ENTER THE NUMBER:</p>
-            
+                <p style="font-size: 25px; display:inline;">
+                  ENTER THE NUMBER:
+                </p>
                 <input placeholder="NUMBER:"type="text" id="inpu" class="input">
             </div>
         </div>
-
         <div id="body">
             <div>
-                <p style="font-size: 30px; display:inline;">BASE:</p><input placeholder="INPUT" type="number" id="base" class="input">  
+                <p style="font-size: 30px; display:inline;">
+                  BASE:
+                </p>
+                <input placeholder="INPUT" type="number" id="base" class="input">  
             </div>
             <div>
-
-            <P id="p">TO</P>
+                <P id="p">
+                  TO
+                </P>
+            </div>
+            <div>
+                <p style="font-size: 30px; display:inline;">
+                  BASE:
+                </p>
+                <input placeholder="OUTPUT" type="number" id="basef" class="input">  
+            </div>
         </div>
-
-            <div>
-                <p style="font-size: 30px; display:inline;">BASE:</p><input placeholder="OUTPUT" type="number" id="basef" class="input">  
+        <center>
+            <div id="answerdiv">
+                <h1 id="answer"></h1>
             </div>
-        </div>
-<center>
-    <div id="answerdiv">
-        <h1 id="answer"></h1>
-    </div>
-    </center>
-
-
-       
-
-
-<center>
-        <button onclick="conversion()" id="convert">
-        CONVERT</button>
-    </center>
-
-
-</div>
-
-
-
-<div id="pchangec">
-
-
-
-
-        <div id="body">
-            <div>
-                
-                <p style="font-size: 15px; display:inline;">ENTER FIRST NUMBER:</p>
-            
-                <input placeholder="NUMBER:"type="text" id="inpu2" class="input">
-            </div>
-
-            <div>
-                <p style="font-size: 15px; display:inline;">BASE:</p><input placeholder="INPUT" type="number" id="base2" class="input">  
-            </div>
-
+            <button onclick="conversion()" id="convert">
+              CONVERT
+            </button>
+        </center>
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-        <div id="body">
-            <div>
-                
-                <p style="font-size: 15px; display:inline;">ENTER SECOND NUMBER:</p>
-            
-                <input placeholder="NUMBER:"type="text" id="inpu3" class="input">
-            </div>
-
-            <div>
-                <p style="font-size:15px; display:inline;">BASE:</p><input placeholder="INPUT" type="number" id="base3" class="input">  
-            </div>
-
-        </div>
-
-        <div id="body">
-            
-           
-        
-
-            
-
-                <div id="theme" style=" border: 3px solid black; background-color: rgb(255, 255, 255) ;padding:3px; margin :3px; border-radius:15px; color: rgb(0, 0, 0); display:inline-block; font-size:20px; width:fit-content;">OPERATION
-<center><div  style=" border-radius: 15px; background-color: rgb(58, 114, 82); width:40%; height:fit-content; padding:2px;">
-                    <p id="fix" style ="display:inline-block; margin:4px;">(+)</p>
+        <div id="pchangec">
+            <div id="body">
+                <div>
+                    <p style="font-size: 15px; display:inline;">
+                      ENTER FIRST NUMBER:
+                    </p>
+                    <input placeholder="NUMBER:"type="text" id="inpu2" class="input">
                 </div>
-            </center>
-            
-                    <div id="show">
- 
-                        <div class="ht">
-                        
-    <button onclick="add()">(+)</button> <br>
-    
-    </div>
-    <div class="ht">
-    <button onclick="sub()">(-)</button> <br>
-    
-    </div>
-    <div class="ht">
-    <button onclick="mul()">(*)</button>
-    
-    </div>
-    <div class="ht">
-    <button onclick="dev()">(/)</button>
-    </div>
-                    
+                <div>
+                    <p style="font-size: 15px; display:inline;">
+                      BASE:
+                    </p>
+                    <input placeholder="INPUT" type="number" id="base2" class="input">  
                 </div>
             </div>
+            <div id="body">
+                <div>
+                    <p style="font-size: 15px; display:inline;">
+                      ENTER SECOND NUMBER:
+                    </p>
+                    <input placeholder="NUMBER:"type="text" id="inpu3" class="input">
+                </div>
+                    <div>
+                        <p style="font-size:15px; display:inline;">
+                          BASE:
+                        </p>
+                        <input placeholder="INPUT" type="number" id="base3" class="input">  
+                    </div>
+                </div>
+                <div id="body">
+                    <div id="theme" style=" border: 3px solid black; background-color: rgb(255, 255, 255) ;padding:3px; margin :3px; border-radius:15px; color: rgb(0, 0, 0); display:inline-block; font-size:20px; width:fit-content;">
+                        OPERATION
+                        <center>
+                            <div  style=" border-radius: 15px; background-color: rgb(58, 114, 82); width:40%; height:fit-content; padding:2px;">
+                                <p id="fix" style ="display:inline-block; margin:4px;">
+                                  (+)
+                                </p>
+                            </div>
+                        </center>
+                        <div id="show">
+                            <div class="ht">
+                                <button onclick="add()">
+                                  (+)
+                                </button>
+                                <br>
+                            </div>
+                            <div class="ht">
+                                <button onclick="sub()">
+                                  (-)
+                                </button>
+                                <br>
+                            </div>
+                            <div class="ht">
+                                <button onclick="mul()">
+                                  (*)
+                                </button>
+                            </div>
+                            <div class="ht">
+                                <button onclick="dev()">
+                                  (/)
+                                </button>
+                            </div>
 
-            <div>
-                <p style="font-size: 20px; display:inline;">BASE:</p><input placeholder="OUTPUT" type="number" id="basef2" class="input">  
+                        </div>
+                    </div>
+                    <div>
+                        <p style="font-size: 20px; display:inline;">
+                          BASE:
+                        </p>
+                        <input placeholder="OUTPUT" type="number" id="basef2" class="input">  
+                    </div>
+                </div>
+
+                <center>
+                    <div id="answerdiv2">
+                        <h1 id="answer2"></h1>
+                    </div>
+                    <button onclick="calculation()" id="convert">
+                      RESULT
+                    </button>
+                </center>
             </div>
+
+
+        <div id="pchangeco">
+            <div id="body">
+                <div>
+                    <p style="font-size: 25px; display:inline;">
+                      ENTER THE NUMBER:
+                    </p>
+                    <input placeholder="NUMBER:"type="text" id="inpu4" class="input">
+                </div>
             </div>
-      
-<center>
-    <div id="answerdiv2">
-        <h1 id="answer2"></h1>
-    </div>
-    </center>
-
-
-       
-
-
-<center>
-        <button onclick="calculation()" id="convert">
-        RESULT</button>
-    </center>
-
-</div>
-
-<div id="pchangeco">
-    <div id="body">
-        <div>
-            <p style="font-size: 25px; display:inline;">ENTER THE NUMBER:</p>
-            <input placeholder="NUMBER:"type="text" id="inpu4" class="input">
-        </div>
-    </div>
-    <div id="body">
-        <div>
-            <p style="font-size: 30px; display:inline; padding:4px;">BASE:</p>
-            <input placeholder="INPUT" type="number" id="base4" class="input">  
-        </div>
-        <div style=" display:flex; justify-content: space-around; height:50px; width:50%; min-width: 200px; max-width: 400px;">
-            <button id="Rs" onclick="rs()" style="border:3px solid black; border-radius:10px; height:100%; width:45%; font-size: 15px; margin:2px;">
-                R's
-            </button>
-            <button id="R1s" onclick="r1s()" style="border:1px solid black; border-radius:10px; height:100%; width:45%; font-size: 15px; margin:2px;">
-                (R-1)'s
-            </button>
-        </div>
-        </div>
-
-        <center>
-            <div id="answerdiv3">
-                <h1 id="answer3"></h1>
+            <div id="body">
+                <div>
+                    <p style="font-size: 30px; display:inline; padding:4px;">
+                      BASE:
+                    </p>
+                    <input placeholder="INPUT" type="number" id="base4" class="input">  
+                </div>
+                <div style=" display:flex; justify-content: space-around; height:50px; width:50%; min-width: 200px; max-width: 400px;">
+                    <button id="Rs" onclick="rs()" style="border:3px solid black; border-radius:10px; height:100%; width:45%; font-size: 15px; margin:2px;">
+                        Rs
+                    </button>
+                    <button id="R1s" onclick="r1s()" style="border:1px solid black; border-radius:10px; height:100%; width:45%; font-size: 15px; margin:2px;">
+                        (R-1)s
+                    </button>
+                </div>
             </div>
-            </center>
-        
-        
-               
-        
-        
-        <center>
+            <center>
+                <div id="answerdiv3">
+                    <h1 id="answer3">   
+                    </h1>
+                </div>
                 <button onclick="complement()" id="convert">
-                RESULT</button>
+                  RESULT
+                </button>
             </center>
-</div>
-
-    <footer>
-        <div style="background-color: rgb(58, 55, 55); padding:30px; margin-top:100px">
-            
+        </div>
+        <footer>
+            <div style="background-color: rgb(58, 55, 55); padding:30px; margin-top:100px">
                 <h1 style="color:cyan; font-size: 20px; font-family: 'Courier New', Courier, monospace;">
                     <CENTER>
-                    We are here to help you out <BR>  Creator: <BR>  KUNAL SHARMA
+                        We are here to help you out <BR>  Creator: <BR>  KUNAL SHARMA
                     </CENTER>
                 </h1>
-
-        </div>
-    </footer>
-
-      
-
-
-       
-
-
+            </div>
+        </footer>
     </body>
 </html>
