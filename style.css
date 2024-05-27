@@ -61,17 +61,15 @@ p{
     justify-content: space-around;
     align-items:center;
     font-size:30px;
-    margin-top:20px;
-    margin-bottom:20px; 
-    padding:10px;
+    margin-bottom:10px; 
 }
 
 #buright{
     display:inline-block;
     background-size:cover;
     background-image: url("left.png");
-    height:70px;
-    width:70px;
+    height:40px;
+    width:40px;
     border:none;
     background-color: transparent;    
     transform: rotate(180deg);
@@ -80,8 +78,8 @@ p{
     display:inline-block;
     background-size:cover;
     background-image: url("left.png");
-    height:70px;
-    width:70px;
+    height:40px;
+    width:40px;
     border:none;
     background-color: transparent;
 }
@@ -91,7 +89,7 @@ p{
     display:flex;
     justify-content: space-around;
     align-items:center;
-    height:85px;
+    height:35px;
     width:95%;
     margin-top:20px;
 }
@@ -101,7 +99,7 @@ p{
     background-color: transparent;
     border:0px;
     height:100%;
-    font-size:25px;
+    font-size:20px;
     width:30%;   
 }
 #pchangec{
@@ -119,8 +117,8 @@ p{
     color:white;
     background-color:#003C43;
     text-align:center;
-    padding:30px 3px 3px 10px;
-    font-size:90px;
+    padding:10px 3px 3px 10px;
+    font-size:70px;
 }
 
 #body{
