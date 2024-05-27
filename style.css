@@ -33,7 +33,7 @@ p{
     background-color: #13474d;
     color:white;
     height:80px;
-    width:400px;
+    width:300px;
     padding:2px;
     border:2px;
 }
@@ -42,7 +42,7 @@ p{
     color:white;
     border:2px;
     font-size: 100%;
-    width:100%;
+    width:90%;
     height:100%;
 }
 .ht:hover{
