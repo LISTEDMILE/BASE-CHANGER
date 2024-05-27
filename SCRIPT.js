@@ -2,11 +2,11 @@ var tt=1;
 var rsq=1;
 function rs(){
     document.getElementById("R1s").style.border = '1px solid black';
-    document.getElementById("Rs").style.border = '3px solid black';
+    document.getElementById("Rs").style.border = '4px solid black';
     rsq=1;
 }
 function r1s(){
-    document.getElementById("R1s").style.border = '3px solid black';
+    document.getElementById("R1s").style.border = '4px solid black';
     document.getElementById("Rs").style.border = '1px solid black';
     rsq=2;
 }

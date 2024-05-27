@@ -6,6 +6,11 @@ a{
     text-decoration: none;
     color:white;    
 }
+p{
+    font-size: 65px;
+    margin:20px;
+
+}
 
 #show{
     display:none;
@@ -27,7 +32,8 @@ a{
 .ht{
     background-color: #13474d;
     color:white;
-    height:fit-content;
+    height:80px;
+    width:400px;
     padding:2px;
     border:2px;
 }
@@ -35,6 +41,9 @@ a{
     background-color: #13474d;
     color:white;
     border:2px;
+    font-size: 100%;
+    width:100%;
+    height:100%;
 }
 .ht:hover{
     background-color: white;
@@ -51,16 +60,18 @@ a{
     display:flex;
     justify-content: space-around;
     align-items:center;
-    font-size:15px;
-    margin-top:4px;    
+    font-size:30px;
+    margin-top:50px;
+    margin-bottom:20px; 
+    padding:10px;
 }
 
 #buright{
     display:inline-block;
     background-size:cover;
     background-image: url("left.png");
-    height:30px;
-    width:30px;
+    height:70px;
+    width:70px;
     border:none;
     background-color: transparent;    
     transform: rotate(180deg);
@@ -69,8 +80,8 @@ a{
     display:inline-block;
     background-size:cover;
     background-image: url("left.png");
-    height:30px;
-    width:30px;
+    height:70px;
+    width:70px;
     border:none;
     background-color: transparent;
 }
@@ -80,19 +91,17 @@ a{
     display:flex;
     justify-content: space-around;
     align-items:center;
-    height:fit-content;
+    height:85px;
     width:95%;
     margin-top:20px;
 }
 .pagecbutton{
     color:#98EECC;
     text-decoration: none;
-    
     background-color: transparent;
     border:0px;
-  
-    height:fit-content;
-  font-size:55%;
+    height:100%;
+    font-size:25px;
     width:30%;   
 }
 #pchangec{
@@ -110,42 +119,47 @@ a{
     color:white;
     background-color:#003C43;
     text-align:center;
-    padding:15px 3px 3px 3px;
-    font-size:55px;
+    padding:80px 3px 3px 10px;
+    font-size:90px;
 }
 
 #body{
-    margin:40px;
+    margin:100px 40px;
     text-align:center;
     background-color:#77B0AA;
-    padding:10px;
+    padding:20px;
     border-radius:14px;
+    justify-content: space-around; 
+    
+}
+#bodyc{
     display:flex;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
 input{
-    margin:2px 1px 1px 3px;
-    height:50px;
+    margin-bottom:20px;
+    height:90px;
     width:50%;
     border:3px solid black;
     border-radius:15px;
     text-align: center;
-    font-size:2em;
+    font-size:3em;
 }
 
 #convert{
     color:white;
     background-color:#003C43;
-    height:50px;
-    width:200px;
+    height:150px;
+    width:500px;
     border:2px solid #77B0AA;
     border-radius:10px;
+    font-size: 300%;
 }
 
 #answer{
     color:#13474d;
-    font-size:50px;
+    font-size:80px;
 }
 #answerdiv{
     display:none;
@@ -158,7 +172,7 @@ input{
 }
 #answer2{
     color:#13474d;
-    font-size:50px;
+    font-size:80px;
 }
 #answerdiv2{
     display:none;
@@ -170,13 +184,9 @@ input{
     margin-bottom:40px;
 }
 
-#p{
-    font-size: 30px;
-}
-
 #answer3{
     color:#13474d;
-    font-size:50px;
+    font-size:80px;
 }
 #answerdiv3{
     display:none;
